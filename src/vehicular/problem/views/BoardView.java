@@ -11,7 +11,7 @@ import java.awt.Toolkit;
 public class BoardView extends Board {
 
     private double hgap, vgap;
-    int i =0;
+    int i = 0;
 
     public BoardView () {
         super();

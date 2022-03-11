@@ -36,13 +36,13 @@ public class Utils {
         int diference_before = a.x - b.x;
         int diference_after = a_position - b_position;
 
-        return (diference_after < 0 && diference_before < 0) || diference_after > 0 && diference_before > 0;
+        return (diference_after < 0 && diference_before < 0) || 
+               (diference_after > 0 && diference_before > 0);
     }
 
     public static boolean checkIfLastCarPassed(Vehicle vehicle, Vehicle otherLaneCarBehind) {
         int final_vehicle_x = otherLaneCarBehind.x + otherLaneCarBehind.length * otherLaneCarBehind.direction * -1;
-    
         return (vehicle.x < otherLaneCarBehind.x && vehicle.x < final_vehicle_x) || 
-        (vehicle.x > otherLaneCarBehind.x && vehicle.x > final_vehicle_x);
+               (vehicle.x > otherLaneCarBehind.x && vehicle.x > final_vehicle_x);
     }
 }

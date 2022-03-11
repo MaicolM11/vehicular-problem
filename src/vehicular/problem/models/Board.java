@@ -7,7 +7,7 @@ public class Board {
 
     public static final int via_length = 1000; // m
     public static final int scope = 50; // m
-    public static final int space_between_vehicles = 1;
+    public static final int space_between_vehicles = 1; // m
 
     protected Vehicle[][] via;
     protected Queue<Vehicle> vehicles;
